@@ -213,7 +213,7 @@
   filter: sepia(0.6);
 }
 
-.labirinth-img{
+.labirinth-img {
   filter: grayscale(80%);
 }
 
@@ -222,8 +222,7 @@
 }
 
 .code-img {
-  filter: brightness(200%) grayscale(100%) sepia(100%) invert(100%);
-    filter: brightness(200%) grayscale(100%) sepia(100%) invert(100%);
+  filter: brightness(200%) grayscale(100%) sepia(100%);
 }
 
 .article {
