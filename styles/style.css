@@ -477,7 +477,7 @@
 
 .dialog__button {
   display: block;
-  inline-size: 293px;
+  inline-size: 100%;
   padding-block-start: 9px;
   padding-block-end: 5px;
   background: transparent;
@@ -524,6 +524,10 @@
     inline-size: 100%;
   }
 
+  .header__logo {
+    --logo-font-size: clamp(1.25rem, -0.8214rem + 16.5714vw, 3.0625rem);
+  }
+
   .content__section {
     inline-size: 100%;
   }
@@ -542,5 +546,13 @@
 
   .main__button .button__text {
     margin-block-end: 15px;
+  }
+
+  .dialog {
+    padding: 15px;
+  }
+
+  .dialog__button {
+    inline-size: 100%;
   }
 }
