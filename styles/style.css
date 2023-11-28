@@ -187,35 +187,35 @@
   border-block-end: 2px solid var(--accent-color);
 }
 
-.stairs-img {
+.content__section-title-img_type_brightness {
   filter: brightness(30%);
 }
 
-.road-img {
+.content__section-title-img_type_contrast {
   filter: contrast(85%);
 }
 
-.doubts-img {
+.content__section-title-img_type_saturate {
   filter: saturate(390%);
 }
 
-.perfect-img {
+.content__section-title-img_type_opacity {
   filter: opacity(70%);
 }
 
-.support-img {
+.content__section-title-img_type_sepia {
   filter: sepia(0.6);
 }
 
-.labirinth-img {
+.content__section-title-img_type_grayscale {
   filter: grayscale(80%);
 }
 
-.motivation-img {
+.content__section-title-img_type_contrast {
   filter: contrast(250%);
 }
 
-.code-img {
+.content__section-title-img_type_brightness-grayscale-sepia {
   filter: brightness(200%) grayscale(100%) sepia(100%);
 }
 
