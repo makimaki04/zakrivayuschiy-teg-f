@@ -54,8 +54,13 @@
 }
 
 .header__logo {
+  text-transform: uppercase;
   text-decoration: none;
   font-size: var(--logo-font-size);
+}
+
+.header__logo:focus {
+  outline: none;
 }
 
 .header__title {
@@ -101,7 +106,7 @@
   position: absolute;
   inline-size: 0;
   block-size: 2px;
-  background: #000;
+  background: var(--accent-color);
   left: 0;
   bottom: -1px;
   transition: 0.3s ease;
@@ -109,7 +114,6 @@
 
 .theme-menu__button:focus-visible::after {
   content: "";
-  position: absolute;
   inline-size: 100%;
 }
 
@@ -120,16 +124,6 @@
   top: 0;
   left: -20px;
   animation: movement 0.5s ease-in-out infinite alternate;
-}
-
-@keyframes movement {
-  from {
-    left: -20px;
-  }
-
-  to {
-    left: -24px;
-  }
 }
 
 .main__content {
@@ -246,11 +240,12 @@
 .card__icon-button {
   margin-block-start: 2px;
   align-self: flex-start;
-  max-block-size: 34px;
+  block-size: 34px;
   padding: 0;
   margin-inline-end: 6px;
   background-color: transparent;
   border: none;
+  transition: 0.3s ease;
 }
 
 .card__icon-button:focus {
@@ -258,7 +253,6 @@
 }
 
 .card__icon-button:focus-visible {
-  transition: 0.3s ease;
   outline: 2px solid var(--accent-color);
 }
 
@@ -318,32 +312,12 @@
 }
 
 .like-icon.is-liked .heart {
-  animation: scale 0.3s 0.1s ease-in alternate-reverse;
+  animation: scale 0.3s 0.1s ease-in alternate;
   transform-origin: center;
 }
 
-@keyframes scale {
-  from {
-    transform: scale(1);
-  }
-
-  to {
-    transform: scale(1.5);
-  }
-}
-
 .like-icon.is-liked .sparks {
-  animation: opacity 0.3s 0.3s ease-in alternate-reverse;
-}
-
-@keyframes opacity {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+  animation: opacity 0.3s 0.3s ease-in alternate;
 }
 
 .card__like-button {
@@ -399,6 +373,7 @@
 
 .main__button {
   inline-size: clamp(306px, 25vw, 340px);
+  margin-block-end: 103px;
   display: flex;
   justify-content: center;
   align-items: center;
