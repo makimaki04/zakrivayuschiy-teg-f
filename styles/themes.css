@@ -9,8 +9,8 @@
     --bg-color: #FFF;
     --accent-color: #000;
     --gradient-color: #d3d3d3;
-    --gradient-accent-color-first: #e7e7e7;
-    --gradient-accent-color-second: #1a1a1a;
+    --gradient-accent-color: #e7e7e7;
+    --gradient-top-layer-color: #1a1a1a;
     --stroke-color: #fff;
     --button-txt-color: #fff;
     --main-body-color: #fff;
@@ -22,8 +22,8 @@
     --bg-color: #000;
     --accent-color: #00CC14;
     --gradient-color: #000;
-    --gradient-accent-color-first: #007f0c;
-    --gradient-accent-color-second: #004306;
+    --gradient-accent-color: #007f0c;
+    --gradient-top-layer-color: #004306;
     --stroke-color: #000;
     --button-txt-color: #00CC14;
     --main-body-color: #000;
@@ -36,8 +36,8 @@
         --bg-color: #000;
         --accent-color: #00CC14;
         --gradient-color: #000;
-        --gradient-accent-color-first: #007f0c;
-        --gradient-accent-color-second: #004306;
+        --gradient-accent-color: #007f0c;
+        --gradient-top-layer-color: #004306;
         --stroke-color: #000;
         --button-txt-color: #00CC14;
         --main-body-color: #000;

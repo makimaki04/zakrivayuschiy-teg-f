@@ -28,8 +28,8 @@
       transparent 2px 4px
     ),
     linear-gradient(
-      var(--gradient-accent-color-first) 0.01%,
-      var(--gradient-accent-color-second)
+      var(--gradient-accent-color) 0.01%,
+      var(--gradient-top-layer-color)
     );
   background-size: cover;
   background-position: center;
@@ -180,7 +180,7 @@
 
 .content__section-title-img {
   block-size: 100%;
-  inline-size: 100%;
+  aspect-ratio: 1/1;
   object-fit: cover;
   object-position: center;
   border-block-start: 2px solid var(--accent-color);
@@ -320,18 +320,22 @@
   animation: opacity 0.3s 0.3s ease-in alternate;
 }
 
+.button {
+  background: var(--bg-color);
+  border: 2px solid var(--accent-color);
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
 .card__like-button {
   margin-block-end: 5px;
   inline-size: 130px;
   padding-block-start: 7px;
-  padding-block-end: 5px;
-  background: transparent;
-  border: 2px solid var(--accent-color);
-  position: relative;
-  overflow: hidden;
+  padding-block-end: 5px
 }
 
-.card__like-button::after {
+.button-animation::after {
   content: "";
   position: absolute;
   left: 0;
@@ -340,22 +344,22 @@
   inline-size: 100%;
   transform: translateX(-100%);
   background: var(--accent-color);
+  transition: 0.5s ease-in-out;
 }
 
-.card__like-button:focus {
+.button-animation:focus {
   outline: none;
 }
 
-.card__like-button:focus-visible {
+.button-animation:focus-visible {
   box-shadow: 2px 2px 0 0 var(--accent-color);
-  transition: 0.3s ease;
 }
 
-.card__like-button:hover {
+.cbutton-animation:hover {
   cursor: pointer;
 }
 
-.card__like-button:hover::after {
+.button-animation:hover::after {
   transform: translateX(0);
   transition: 0.5s ease-in-out;
 }
@@ -378,39 +382,6 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
-  background: var(--bg-color);
-  border: 2px solid var(--accent-color);
-  position: relative;
-  overflow: hidden;
-}
-
-.main__button:focus {
-  outline: none;
-}
-
-.main__button:focus-visible {
-  box-shadow: 2px 2px 0 0 var(--accent-color);
-  transition: 0.3s ease;
-}
-
-.main__button::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  block-size: 100%;
-  inline-size: 100%;
-  transform: translateX(-100%);
-  background: var(--accent-color);
-}
-
-.main__button:hover {
-  cursor: pointer;
-}
-
-.main__button:hover::after {
-  transform: translateX(0);
-  transition: 0.5s ease-in-out;
 }
 
 .button-icon {
@@ -418,7 +389,6 @@
   block-size: 21px;
   position: relative;
   z-index: 1;
-  color: var(--button-txt-color);
   mix-blend-mode: difference;
 }
 
@@ -455,43 +425,10 @@
   inline-size: 100%;
   padding-block-start: 9px;
   padding-block-end: 5px;
-  background: transparent;
-  border: 2px solid var(--accent-color);
-  position: relative;
-  overflow: hidden;
 }
 
 .dialog .button__text {
   text-transform: uppercase;
-}
-
-.dialog__button:focus {
-  outline: none;
-}
-
-.dialog__button:focus-visible {
-  box-shadow: 2px 2px 0 0 var(--accent-color);
-  transition: 0.3s ease;
-}
-
-.dialog__button::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  block-size: 100%;
-  inline-size: 100%;
-  transform: translateX(-100%);
-  background: var(--accent-color);
-}
-
-.dialog__button:hover {
-  cursor: pointer;
-}
-
-.dialog__button:hover::after {
-  transform: translateX(0);
-  transition: 0.5s ease-in-out;
 }
 
 @media (width <= 375px) {
