@@ -331,7 +331,7 @@
   margin-block-end: 5px;
   inline-size: 130px;
   padding-block-start: 7px;
-  padding-block-end: 5px
+  padding-block-end: 5px;
 }
 
 .button-animation::after {
@@ -424,7 +424,7 @@
 }
 
 .dialog__title {
-  max-inline-size:  clamp(12.375rem, 11.5827rem + 3.3803vw, 14.625rem);
+  max-inline-size: clamp(12.375rem, 11.5827rem + 3.3803vw, 14.625rem);
   color: var(--accent-color);
   font-family: var(--accent-font);
   font-size: 14px;
