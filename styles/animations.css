@@ -13,32 +13,31 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 @keyframes movement {
-    from {
-      left: -20px;
-    }
-  
-    to {
-      left: -24px;
-    }
-  }
-  
-@keyframes scale {
-    from {
-      transform: scale(1);
-    }
-  
-    to {
-      transform: scale(1.5);
-    }
+  from {
+    left: -20px;
   }
 
-@keyframes opacity {
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
+  to {
+    left: -24px;
   }
-  
+}
+
+@keyframes scale {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

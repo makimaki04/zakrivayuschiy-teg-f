@@ -1,21 +1,21 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-    --font: Inter-Variable, Arial, Helvetica, sans-serif;
-    --accent-font: PressStart2P, Arial, Helvetica, fantasy;
-    --font-weight-title: 700;
-    --font-weight-txt: 400;
-    --bg-color: #FFF;
-    --accent-color: #000;
-    --gradient-color: #d3d3d3;
-    --gradient-accent-color: #e7e7e7;
-    --gradient-top-layer-color: #1a1a1a;
-    --logo-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-    --title-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
-    --stroke-color: #fff;
-    --button-txt-color: #fff;
-    --contour-color: #000;
-    --main-body-color: #fff;
-    --core-color: #fff;
-    --sparks-color: #F00;
-    --heart-color: #F00;
+  --font: Inter-Variable, Arial, Helvetica, sans-serif;
+  --accent-font: PressStart2P, Arial, Helvetica, fantasy;
+  --font-weight-title: 700;
+  --font-weight-txt: 400;
+  --bg-color: #fff;
+  --accent-color: #000;
+  --gradient-color: #d3d3d3;
+  --gradient-accent-color: #e7e7e7;
+  --gradient-top-layer-color: #1a1a1a;
+  --logo-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --title-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  --stroke-color: #fff;
+  --button-txt-color: #fff;
+  --contour-color: #000;
+  --main-body-color: #fff;
+  --core-color: #fff;
+  --sparks-color: #f00;
+  --heart-color: #f00;
 }

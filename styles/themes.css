@@ -6,48 +6,48 @@
 */
 
 :root.theme-light {
-    --font-weight-title: 700;
-    --font-weight-txt: 400;
-    --bg-color: #FFF;
-    --accent-color: #000;
-    --gradient-color: #d3d3d3;
-    --gradient-accent-color: #e7e7e7;
-    --gradient-top-layer-color: #1a1a1a;
-    --stroke-color: #fff;
-    --button-txt-color: #fff;
-    --main-body-color: #fff;
-    --core-color: #fff;
-    --contour-color: #000;
+  --font-weight-title: 700;
+  --font-weight-txt: 400;
+  --bg-color: #fff;
+  --accent-color: #000;
+  --gradient-color: #d3d3d3;
+  --gradient-accent-color: #e7e7e7;
+  --gradient-top-layer-color: #1a1a1a;
+  --stroke-color: #fff;
+  --button-txt-color: #fff;
+  --main-body-color: #fff;
+  --core-color: #fff;
+  --contour-color: #000;
 }
 
 :root.theme-dark {
+  --font-weight-title: 785;
+  --font-weight-txt: 465;
+  --bg-color: #000;
+  --accent-color: #00cc14;
+  --gradient-color: #000;
+  --gradient-accent-color: #007f0c;
+  --gradient-top-layer-color: #004306;
+  --stroke-color: #000;
+  --button-txt-color: #00cc14;
+  --main-body-color: #000;
+  --core-color: #000;
+  --contour-color: #00cc14;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
     --font-weight-title: 785;
     --font-weight-txt: 465;
     --bg-color: #000;
-    --accent-color: #00CC14;
+    --accent-color: #00cc14;
     --gradient-color: #000;
     --gradient-accent-color: #007f0c;
     --gradient-top-layer-color: #004306;
     --stroke-color: #000;
-    --button-txt-color: #00CC14;
+    --button-txt-color: #00cc14;
     --main-body-color: #000;
     --core-color: #000;
-    --contour-color: #00CC14;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --font-weight-title: 785;
-        --font-weight-txt: 465;
-        --bg-color: #000;
-        --accent-color: #00CC14;
-        --gradient-color: #000;
-        --gradient-accent-color: #007f0c;
-        --gradient-top-layer-color: #004306;
-        --stroke-color: #000;
-        --button-txt-color: #00CC14;
-        --main-body-color: #000;
-        --core-color: #000;
-        --contour-color: #00CC14;
-    }    
+    --contour-color: #00cc14;
+  }
 }
