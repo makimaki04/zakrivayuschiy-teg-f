@@ -6,6 +6,8 @@
 */
 
 :root.theme-light {
+    --font-weight-title: 700;
+    --font-weight-txt: 400;
     --bg-color: #FFF;
     --accent-color: #000;
     --gradient-color: #d3d3d3;
@@ -19,6 +21,8 @@
 }
 
 :root.theme-dark {
+    --font-weight-title: 785;
+    --font-weight-txt: 465;
     --bg-color: #000;
     --accent-color: #00CC14;
     --gradient-color: #000;
@@ -33,6 +37,8 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
+        --font-weight-title: 785;
+        --font-weight-txt: 465;
         --bg-color: #000;
         --accent-color: #00CC14;
         --gradient-color: #000;

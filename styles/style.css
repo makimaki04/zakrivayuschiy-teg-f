@@ -36,14 +36,13 @@
   background-attachment: fixed;
   color: var(--accent-color);
   font-family: var(--font);
-  font-variation-settings: "wght" var(--font-weight-txt);
   font-size: 18px;
 }
 
 .header {
   inline-size: clamp(375px, 52vw, 700px);
   margin: 104px auto 100px;
-  padding: clamp(120px, 25%, 136px) 0 25px;
+  padding-block: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem) 25px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -134,21 +133,20 @@
 }
 
 .article {
-  inline-size: clamp(375px, 50vw, 700px);
+  inline-size: clamp(23.188rem, 16.0359rem + 30.5157vw, 43.5rem);
   background: var(--bg-color);
   border: 2px solid var(--accent-color);
 }
 
-.content__section-title {
+.article-title {
   padding-block: 5px;
   padding-inline: 9px;
   font-size: 18px;
   font-variation-settings: "wght" var(--font-weight-title);
 }
 
-.section__wrapper {
+.article__wrapper {
   position: relative;
-  block-size: 700px;
   inline-size: 100%;
 }
 
@@ -178,44 +176,44 @@
   }
 }
 
-.content__section-title-img {
-  block-size: 100%;
-  aspect-ratio: 1/1;
+.article-title-img {
+  inline-size: 100%;
+  aspect-ratio: 1/1.01;
   object-fit: cover;
   object-position: center;
   border-block-start: 2px solid var(--accent-color);
   border-block-end: 2px solid var(--accent-color);
 }
 
-.content__section-title-img_type_brightness {
+.article-title-img_type_brightness {
   filter: brightness(30%);
 }
 
-.content__section-title-img_type_contrast {
+.article-title-img_type_contrast {
   filter: contrast(85%);
 }
 
-.content__section-title-img_type_saturate {
+.article-title-img_type_saturate {
   filter: saturate(390%);
 }
 
-.content__section-title-img_type_opacity {
+.article-title-img_type_opacity {
   filter: opacity(70%);
 }
 
-.content__section-title-img_type_sepia {
+.article-title-img_type_sepia {
   filter: sepia(0.6);
 }
 
-.content__section-title-img_type_grayscale {
+.article-title-img_type_grayscale {
   filter: grayscale(80%);
 }
 
-.content__section-title-img_type_contrast {
+.article-title-img_type_contrast {
   filter: contrast(250%);
 }
 
-.content__section-title-img_type_brightness-grayscale-sepia {
+.article-title-img_type_brightness-grayscale-sepia {
   filter: brightness(200%) grayscale(100%) sepia(100%);
 }
 
@@ -226,6 +224,7 @@
   flex-direction: column;
   gap: 27px;
   line-height: 21px;
+  font-variation-settings: "wght" var(--font-weight-txt);
 }
 
 .card__buttons-block {
@@ -376,7 +375,7 @@
 }
 
 .main__button {
-  inline-size: clamp(306px, 25vw, 340px);
+  inline-size: 340px;
   margin-block-end: 103px;
   display: flex;
   justify-content: center;
@@ -384,18 +383,27 @@
   gap: 8px;
 }
 
-.button-icon {
+.main__button-icon {
   margin-block: 14px;
   block-size: 21px;
+  inline-size: 21px;
   position: relative;
   z-index: 1;
   mix-blend-mode: difference;
 }
 
 .dialog {
-  padding: 30px;
+  padding: 32px;
+  min-inline-size: clamp(21.313rem, 20.9619rem + 1.4978vw, 22.31rem);
   background: var(--bg-color);
   border: 2px solid var(--accent-color);
+}
+
+.dialog[open] {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .dialog::backdrop {
@@ -403,26 +411,31 @@
   opacity: 0.75;
 }
 
+.dialog__conteiner {
+  display: flex;
+  gap: 20px;
+}
+
 .dialog__diskette {
-  margin-block-end: 12px;
-  margin-inline-end: 20px;
+  align-self: center;
+  inline-size: 39px;
+  block-size: 39px;
+  mix-blend-mode: difference;
 }
 
 .dialog__title {
-  max-inline-size: 234px;
-  display: inline-block;
+  max-inline-size:  clamp(12.375rem, 11.5827rem + 3.3803vw, 14.625rem);
   color: var(--accent-color);
   font-family: var(--accent-font);
   font-size: 14px;
   font-weight: 400;
   line-height: 150%;
   text-transform: uppercase;
-  margin-block-end: 30px;
 }
 
 .dialog__button {
   display: block;
-  inline-size: 100%;
+  inline-size: clamp(16.063rem, 15.2707rem + 3.3803vw, 18.313rem);
   padding-block-start: 9px;
   padding-block-end: 5px;
 }
@@ -440,18 +453,24 @@
     --logo-font-size: clamp(1.25rem, -0.8214rem + 16.5714vw, 3.0625rem);
   }
 
-  .content__section {
+  .article {
     inline-size: 100%;
   }
 
+  .label {
+    top: 25px;
+    right: 11px;
+  }
+
   .main__button {
+    inline-size: 310px;
     flex-direction: column;
     gap: 8px;
     align-items: center;
     justify-content: flex-start;
   }
 
-  .button-icon {
+  .main__button-icon {
     margin-block-start: 15px;
     margin-block-end: 0;
   }
@@ -460,11 +479,8 @@
     margin-block-end: 15px;
   }
 
-  .dialog {
-    padding: 15px;
-  }
-
-  .dialog__button {
-    inline-size: 100%;
+  .main__button-icon {
+    block-size: 28px;
+    inline-size: 28px;
   }
 }
